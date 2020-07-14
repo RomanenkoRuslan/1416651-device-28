@@ -152,53 +152,7 @@ input[type="radio"].visually-hidden {
 	padding-left: 12px;
 }
 
-.search {
-	border: none;
-}
 
-.search-area {
-	position: relative;
-	margin-right: 285px;
-}
-
-.search-area input {
-	background-color: transparent;
-}
-
-.search-area .search {
-	font-family: "Open Sans", "Arial", sans-serif;
-	margin-left: 17px;
-}
-
-.search-area button {
-	font-family: "Open Sans", "Arial", sans-serif;
-	font-weight: 300;
-	font-size: 15px;
-	line-height: 20px;
-	text-transform: uppercase;
-	display: none;
-	position: absolute;
-	left: 370px;
-	top: -33px;
-	background-color: var(--basic-light-yellow);
-	border: 2px solid var(--basic-black);
-	padding: 15px;
-}
-
-.search-area button:hover {
-	background-color: var(--basic-black);
-	color: var(--basic-white);
-}
-
-.search-area button::before {
-	content: "";
-	position: absolute;
-	top: 50px;
-	left: -372px;
-	width: 440px;
-	height: 2px;
-	background-color: var(--basic-black);
-}
 
 .entrance {
 	margin-right: 175px;
@@ -215,8 +169,49 @@ input[type="radio"].visually-hidden {
 	padding-right: 70px;
 }
 
-.search:focus + button {
-	display: block;
+.search {
+  flex-basis: 50%;
+  margin-right: 40px;
+  position: relative;
+  display: flex;
+}
+
+.search_text {
+  background-color: #f7e296;
+  border: 0;
+  width: 355px;
+  padding-left: 37px;
+  height: 50px;
+  border-bottom: 2px solid transparent;
+}
+
+.button_search {
+  display: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  height: 50px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  background-color: #f7e296;
+  border: 2px solid black;
+  outline: 0;
+}
+
+.search_text:focus {
+  border-bottom-color: black;
+  outline: none;
+}
+
+.search_text:focus+.button_search {
+    display: block;
+}
+
+.button_search:hover {
+  background: #000;
+  color: #f7e296;
 }
 
 .dropdown {
@@ -229,7 +224,7 @@ input[type="radio"].visually-hidden {
 	display: none;
 }
 
-.catalog-product:hover + .dropdown-content {
+.dropdown:hover .dropdown-content {
 	display: block;
 	width: 1100px;
 	min-height: 129px;
