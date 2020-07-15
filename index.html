@@ -15,9 +15,10 @@
   			<a href="#" class="logo"><img src="img/logo.svg"></a>
   			<ul class="user-navigation">
   				<li class="search-area">
-  					<form class="search" action="https://echo.htmlacademy.ru" method="post">
-              <input class="search_text" id="search1" name="search" placeholder="Поиск по сайту" type="search">
-              <button class="button_search" type="submit">Найти</button>
+  					<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0014 7a7 7 0 10-7 7 6.963 6.963 0 004.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 001-1 .93.93 0 00-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/></svg>
+              <input class="search-form-input" type="search" id="search" placeholder="Поиск по сайту" required="">
+              <button class="submit-btn" type="submit">Найти</button>
             </form>
   				</li>
   				<li class="entrance">
@@ -35,13 +36,13 @@
   			</ul>
   			<ul class="site-navigation">
   				<li class="dropdown">
-  					<a class="catalog-product">каталог товаров 
+  					<a class="catalog-product" href="#">каталог товаров 
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="#272525" fill-opacity="0.3" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg>
             </a>
   					<ul class="dropdown-content">
   						<li>
                 <a href="#">Виртуальная реальность</a>
-                <a href="#">Моноподы для селфи</a>
+                <a href="catalog.html">Моноподы для селфи</a>
                 <a href="#">Экшн-камеры</a>
               </li>
   						<li>
@@ -64,7 +65,7 @@
         <ul class="slides-list">
           <li class="selfie-stick slide-active">
             <img src="img/selfie-stick.png" alt="Палка для селфи">
-            <div class="slide-decoration nmb-1">
+            <div class="slide-decoration slide-1">
               <h3>Делай селфи,<br> как Бен Стиллер!</h3>
               <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <div class="but-hed-flex">
@@ -93,7 +94,7 @@
           </li>
           <li class="fitness-band">
             <img src="img/fitness-band.png" alt="Фитнес браслет">
-            <div class="slide-decoration nmb-2">
+            <div class="slide-decoration slide-2">
               <h3>Худеем правильно!</h3>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a href="#" class="button">подробнее</a>
@@ -116,7 +117,7 @@
           </li>
           <li class="quadrocopter">
             <img src="img/quadrocopter.png" alt="Квадрокоптер с лазаром">
-            <div class="slide-decoration nmb-3">
+            <div class="slide-decoration slide-3">
               <h3>Порхает как бабочка, жалит как пчела!</h3>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <a href="#" class="button">подробнее</a>
@@ -145,28 +146,22 @@
         <h2 class="visually-hidden">Популярные товары</h2>
   			<ul class="popular-list">
   				<li>
-  					<a href="#" class="vr"></a>
-            <h3><a href="#">Виртуальная реальность</a></h3>
+  					<a href="#" class="virtual-reality"><h3>Виртуальная реальность</h3></a>
   				</li>
   				<li>
-  					<a href="#" class="monopod"></a>
-            <h3><a href="#">Моноподы<br> для селфи</a></h3>
+  					<a href="#" class="monopod"><h3>Моноподы<br> для селфи</h3></a>
   				</li>
   				<li>
-  					<a href="#" class="action-cameras"></a>
-            <h3><a href="#">Экшн-камеры</a></h3>
+  					<a href="#" class="action-cameras"><h3>Экшн-камеры</h3></a>
   				</li>
   				<li>
-  					<a href="#" class="fitness-bracelets"></a>
-            <h3><a href="#" class="fitness">Фитнес-браслеты</a></h3>
+  					<a href="#" class="fitness-bracelets"><h3>Фитнес-браслеты</h3></a>
   				</li>
   				<li>
-  					<a href="#" class="smart-watch"></a>
-            <h3><a href="#">Умные часы</a></h3>
+  					<a href="#" class="smart-watch"><h3>Умные часы</h3></a>
   				</li>
   				<li>
-  					<a href="#" class="quadcopters"></a>
-            <h3><a href="#">Квадрокоптеры</a></h3>
+  					<a href="#" class="quadcopters"><h3>Квадрокоптеры</h3></a>
   				</li>
   			</ul>
   		</section>
@@ -312,7 +307,7 @@
           <p>Текст письма:</p>
           <textarea placeholder="В свободной форме"></textarea>
         </label>
-        <button type="sabmit" class="button">Отправить</button>
+        <button type="submit" class="button">Отправить</button>
       </form>
     </section>
 
